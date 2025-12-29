@@ -14,6 +14,7 @@ The WordPress site is automatically started when you open your Codespace. To acc
 
 ### Troubleshooting
 *   **HTTP ERROR 401:** If you see a 401 error, it means you are not authenticated. Please close the browser tab and make sure you are opening the site by clicking the link directly from the "Ports" tab inside your Codespace.
+*   **Site Not Loading:** If the site doesn't load at all, the web server might not be running. You can check its status by running `sudo service apache2 status` in the terminal. If it's not active, you can start it with `sudo service apache2 start`.
 
 ## Accessing the WordPress Admin Panel
 
