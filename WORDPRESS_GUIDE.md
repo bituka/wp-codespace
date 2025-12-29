@@ -4,17 +4,17 @@ This document explains how to access the WordPress application running in your G
 
 ## Accessing the WordPress Site
 
-The WordPress site is automatically started when you open your Codespace. To access it, you need to find the correct URL. The URL is dynamically generated based on your Codespace name.
+The WordPress site is automatically started when you open your Codespace. To access it, you need to use the forwarded port.
 
-1.  **Find your Codespace name:** Look for an environment variable called `CODESPACE_NAME`. You can usually find this in the terminal or in the Codespace settings.
-2.  **Construct the URL:** The URL for your WordPress site will be `https://<CODESPACE_NAME>.github.dev`.
-3.  **Open the site:** Open the URL in your browser to view your WordPress site.
+1.  **Open the "Ports" Tab:** In your Codespace, look for the "Ports" tab, usually located in the bottom panel of the editor.
+2.  **Find the Port:** Look for the port that is forwarding your web server. This will likely be port 80.
+3.  **Open the URL:** You will see a URL next to the port number. Click this URL to open your WordPress site in a new browser tab.
 
 ## Accessing the WordPress Admin Panel
 
 To access the WordPress admin panel, you will need to append `/wp-admin` to the URL of your site.
 
-1.  **Admin URL:** The URL for the admin panel will be `https://<CODESPACE_NAME>.github.dev/wp-admin`.
+1.  **Admin URL:** The URL for the admin panel will be the URL from the "Ports" tab, with `/wp-admin` added to the end.
 2.  **Login Credentials:**
     *   **Username:** `admin`
     *   **Password:** `admin`

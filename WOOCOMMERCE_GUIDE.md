@@ -23,4 +23,4 @@ Once WooCommerce is activated, you can access its settings from the WordPress ad
 WooCommerce automatically creates a "Shop" page on your site.
 
 1.  **Find the Shop Page:** In the admin panel, go to "Pages" to see the "Shop" page.
-2.  **View the Shop:** You can view the shop page by going to `https://<CODESPACE_NAME>.github.dev/shop`.
+2.  **View the Shop:** You can view the shop page by appending `/shop` to the URL you found in the "Ports" tab.
