@@ -20,7 +20,7 @@ wp plugin list --allow-root | grep woocommerce
 1.  **Log in to WordPress Admin Panel:** Follow instructions in `WORDPRESS_GUIDE.md` to access your WordPress dashboard.
 2.  **WooCommerce Setup Wizard:** Navigate to **WooCommerce → Setup Wizard** in the left-hand menu, or go directly to:
 
-    - **Setup URL:** `https://musical-space-fiesta-xrvpp7xrpv2v469-80.app.github.dev/wp-admin/admin.php?page=wc-admin`
+    - **Setup URL:** `https://[your-codespace-name]-80.app.github.dev/wp-admin/admin.php?page=wc-admin`
 
 3.  **Complete Setup:** Follow the on-screen wizard to configure:
     - Store details (business type, industry)
@@ -72,7 +72,7 @@ After setup, you can access WooCommerce settings from WordPress admin panel.
 
 WooCommerce automatically creates a "Shop" page on your site.
 
-**Shop URL:** https://musical-space-fiesta-xrvpp7xrpv2v469-80.app.github.dev/shop/
+**Shop URL:** https://[your-codespace-name]-80.app.github.dev/shop/
 
 You can also view:
 

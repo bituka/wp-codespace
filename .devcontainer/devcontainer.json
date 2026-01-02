@@ -34,7 +34,8 @@
     },
     "80": {
       "label": "WordPress",
-      "onAutoForward": "openBrowser"
+      "onAutoForward": "openBrowser",
+      "elevateIfNeeded": true
     },
     "81": {
       "label": "phpMyAdmin",

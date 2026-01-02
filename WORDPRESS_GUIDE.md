@@ -10,7 +10,7 @@ The WordPress site is automatically started when you open your Codespace. To acc
 
 You can access the site directly using the public URL:
 
-**WordPress Site URL:** https://musical-space-fiesta-xrvpp7xrpv2v469-80.app.github.dev/
+**WordPress Site URL:** https://[your-codespace-name]-80.app.github.dev/
 
 ### Option 2: VS Code Ports Tab
 
@@ -67,7 +67,7 @@ Changes are reflected immediately (no rebuild needed).
 
 Access phpMyAdmin for database management:
 
-**URL:** https://musical-space-fiesta-xrvpp7xrpv2v469-81.app.github.dev/
+**URL:** https://[your-codespace-name]-81.app.github.dev/
 
 ### Database Access
 

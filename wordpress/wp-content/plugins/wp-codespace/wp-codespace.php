@@ -29,3 +29,19 @@ function wp_codespace_enqueue_admin_style() {
 		wp_enqueue_style( 'wp_codespace_admin_style' );
 }
 add_action( 'admin_enqueue_scripts', 'wp_codespace_enqueue_admin_style' );
+
+function wp_codespace_fix_redirects() {
+  if (!isset($_SERVER['HTTP_HOST']) && isset($_SERVER['HTTP_X_FORWARDED_HOST'])) {
+    $_SERVER['HTTP_HOST'] = $_SERVER['HTTP_X_FORWARDED_HOST'];
+  }
+  if (!isset($_SERVER['HTTPS']) && isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
+    $_SERVER['HTTPS'] = 'on';
+  }
+  if (!isset($_SERVER['SERVER_NAME']) && isset($_SERVER['HTTP_X_FORWARDED_HOST'])) {
+    $_SERVER['SERVER_NAME'] = $_SERVER['HTTP_X_FORWARDED_HOST'];
+  }
+  if (!isset($_SERVER['SERVER_PORT']) && isset($_SERVER['HTTP_X_FORWARDED_PROTO'])) {
+    $_SERVER['SERVER_PORT'] = $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https' ? '443' : '80';
+  }
+}
+add_action('init', 'wp_codespace_fix_redirects', -1);

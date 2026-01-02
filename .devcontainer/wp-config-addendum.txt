@@ -2,3 +2,6 @@ define( 'WP_SITEURL', 'https://CODESPACE_NAME-80.app.github.dev/' );
 define( 'WP_HOME', 'https://CODESPACE_NAME-80.app.github.dev/' );
 define( 'FS_METHOD', 'direct' );
 $_SERVER['HTTPS'] = 'on';
+$_SERVER['HTTP_HOST'] = 'CODESPACE_NAME-80.app.github.dev';
+$_SERVER['SERVER_NAME'] = 'CODESPACE_NAME-80.app.github.dev';
+$_SERVER['SERVER_PORT'] = '443';
